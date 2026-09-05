@@ -1,5 +1,5 @@
 /* ============================================================
-   Basil Farooqui — portfolio
+   Basil Al Farooqui — portfolio
    All scroll-linked motion is GSAP ScrollTrigger with `scrub`,
    so every sequence tracks scroll position directly. Nothing
    autoplays. ScrollTriggers are created top-to-bottom in page

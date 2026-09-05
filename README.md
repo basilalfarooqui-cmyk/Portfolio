@@ -1,4 +1,4 @@
-# Portfolio — Basil Farooqui
+# Portfolio — Basil Al Farooqui
 
 Single-page portfolio. Plain HTML, CSS and vanilla JavaScript — no build step, no
 dependencies to install. Open `index.html` in a browser and it runs.

@@ -1,5 +1,5 @@
 /* ============================================================
-   Basil Farooqui — portfolio
+   Basil Al Farooqui — portfolio
 
    FONTS — chosen against the generated-looking defaults:
    Instrument Serif (display) is a high-contrast editorial serif.
@@ -154,8 +154,10 @@ p{ margin:0 0 1em; }
 .hero__name{
   font-family:var(--f-display);
   font-weight:400;
-  font-size:clamp(3.3rem,12vw,8rem);
-  line-height:.96;
+  /* min eased down so the three-word name wraps to two clean lines
+     on a 375px phone rather than crowding the gutters */
+  font-size:clamp(3rem,11vw,8rem);
+  line-height:1;
   letter-spacing:-.018em;
   color:var(--hero-gray);
   margin:0 0 clamp(20px,3vh,34px);
@@ -777,6 +779,18 @@ p{ margin:0 0 1em; }
   .about__media{ max-width:340px; aspect-ratio:4/4.4; }
   .skills__grid{ grid-template-columns:1fr; }
   .proj__panel-inner{ grid-template-columns:1fr; padding-left:0; gap:18px; }
+}
+
+/* Tablet range: the field narrows but the stop boxes do not, so at ~768px
+   stop--2 (left:60% + 280px) runs ~4px past the field edge and gets clipped
+   by the stage's overflow. Tighten the boxes and pull them inward. */
+@media (min-width:761px) and (max-width:1000px){
+  .stop{ width:min(240px,38vw); }
+  .stop--1{ left:30%; top:0%;  }
+  .stop--2{ left:56%; top:32%; }
+  .stop--3{ left:6%;  top:72%; }
+  .stop__title{ font-size:1.16rem; }
+  .stop__text{ font-size:.83rem; }
 }
 
 @media (max-width:760px){
